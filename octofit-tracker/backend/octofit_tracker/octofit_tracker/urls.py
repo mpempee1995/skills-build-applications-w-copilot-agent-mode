@@ -23,7 +23,7 @@ def home(request):
     return JsonResponse({
         'message': 'Welcome to OctoFit Tracker API',
         'endpoints': [
-            f'{base_url}/api/auth/',
+            'https://didactic-enigma-7vj6qw5gvg7wfxjq4-8000.app.github.dev/api/auth/',
             f'{base_url}/api/activities/',
             f'{base_url}/api/teams/',
             f'{base_url}/api/leaderboard/',

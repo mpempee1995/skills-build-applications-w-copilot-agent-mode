@@ -3,7 +3,7 @@ import os
 
 SECRET_KEY = 'your-secret-key'
 DEBUG = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'didactic-enigma-7vj6qw5gvg7wfxjq4-8000.app.github.dev']
 
 codespace_name = os.environ.get('CODESPACE_NAME')
 if codespace_name:
