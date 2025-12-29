@@ -1,5 +1,9 @@
 # Basic settings example
+from pathlib import Path
+
 import os
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'your-secret-key'
 DEBUG = True
@@ -19,6 +23,13 @@ INSTALLED_APPS = [
 ]
 
 ROOT_URLCONF = 'octofit_tracker.urls'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 TEMPLATES = [
     {
